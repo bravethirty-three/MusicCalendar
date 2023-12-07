@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>音乐日历-每天一首优质音乐</title>
+  <meta name="keywords" content="音乐日历,每天一首优质音乐,音乐歌词,发现音乐,音乐经典歌词,音乐推荐网站,音乐主页" />
+  <meta name="description" content="音乐日历，每天一首优质音乐。音乐爱好者的心灵港湾，在这里，发现音乐，享受音乐，分享音乐。" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/search.js"></script>
+  <script type="text/javascript" src="js/base.js"></script>
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3fa10962bd9700be6f7ced27a2f5456a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- main-wrap -------------------------------->
+  <div id="main-wrap-box">
+    <div id="bgimg-wrap">
+      <div id='bgimg' style="background-image: url(Image/common/indexbg.png)">
+        <div id="bg-black"></div>
+      </div>
+    </div>
+    <div id="main-wrap">
+      <div id="day-wrap">
+        <div id="day-content">
+          <span id='month'>拾贰月</span>
+          <span id='day'>05</span>
+          <span id='day-line'></span>
+          <div id='weekbox'>
+            <span id='week'>星期二</span>
+            <div id='weather'>
+              <!-- 和风天气 -->
+              <div id="he-plugin-simple"></div>
+            </div>
+          </div>
+          <div id='daytext'>宜 &nbsp;&nbsp;<span>求索</span></div>
+        </div>
+      </div>
+      <div id="content-wrap">
+        <form action="" method="GET" target="_blank" id='searchForm'>
+          <input id="search" type="text" placeholder="情人" autocomplete="off" autofocus>
+
+          <div id="search-type">
+            <span id='search-type-name'></span>
+            <div id='search-type-icon'></div>
+            <ul id="search-type-menu">
+            </ul>
+          </div>
+          <input type="submit" id='search-btn' value="">
+        </form>
+
+
+        <div id="music-wrap">
+          <a id='music-img-a' href="gem_time1.html" target="_blank">
+            <div id='music-img-box'>
+              <div id='music-img-fixed'>查看详情</div>
+              <img id='music-img' src="Image/gem_time.png" alt="">
+            </div>
+          </a>
+          <a id='music-information' href="gem_time1.html" target="_blank">9.3分&nbsp;华语流行/抒情/悲伤&nbsp;粤语</a>
+
+          <span id='music-text'>多少春秋风雨改 多少崎岖不变爱</span>
+          <a id='music-name' href="gem_time1.html" target="_blank">——《情人》</a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- bottom-wrap -------------------------------->
+    <div id='bottom-wrap'>
+      <div class='logo'></div>
+      <span>每天一首优质音乐</span>
+      <div class='bottom-line'></div>
+      <div class='bottom-btn shoucang-btn'>收藏<div class='shoucang-absolute'>若喜欢这首歌<br>别忘了点击下方的收藏哦</div>
+      </div>
+      <div class='bottom-line'></div>
+      <a class='bottom-btn share-music-btn' href='about.html' target="_blank">关于</a>
+      <div class='bottom-line'></div>
+      <a class='bottom-btn share-music-btn' href='previousRecommendation.html' target="_blank">往日推荐</a>
+      <div class='bottom-line'></div>
+      <a class='bottom-btn share-music-btn' href='#' target="_blank">MusicCalendar</a>
+
+
+      <div id='login'>
+        <a target="_blank" id='login-text'>登录/注册</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- newvistor-wrap -------------------------------->
+  <!-- login page -->
+  <div id="background-alpha">
+
+  </div>
+
+  <div id="login-box">
+    <img src="Image/common/logo.png">
+    <form action="./js/valide.js" method="post">
+      <div id="userID">
+        <span></span>
+        <input type="text" placeholder="请输入用户名" autocomplete="off" autofocus name="usersid">
+      </div>
+      <div id="passwd">
+        <span></span>
+        <input type="password" placeholder="请输入密码" autocomplete="off" autofocus name="passwd">
+      </div>
+      <input type="submit" value="登录" id="login-btn">
+    </form>
+  </div>
+
+  <!-- weatherjs-->
+  <script>
+    WIDGET = {
+      CONFIG: {
+        "modules": "102",
+        "background": 5,
+        "tmpColor": "F4E5B3",
+        "tmpSize": 16,
+        "cityColor": "F4E5B3",
+        "citySize": 16,
+        "aqiSize": 16,
+        "weatherIconSize": 24,
+        "alertIconSize": 18,
+        "padding": "0px 0px 0px 0px",
+        "shadow": "1",
+        "language": "auto",
+        "borderRadius": 5,
+        "fixed": "false",
+        "vertical": "center",
+        "horizontal": "right",
+        "key": "29ecf484948d483aa05cb284046bd56a"
+      }
+    }
+  </script>
+  <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+  <!-- weatherjs end     -->
+  <script>
+    var btn = document.getElementById('login');
+    var div1 = document.getElementById('background-alpha')
+    var div2 = document.getElementById('login-box')
+    btn.onclick = function () {
+      div1.style.display = "block";
+      div2.style.display = "block";
+    }
+  </script>
+
+  <script>
+    var btn = document.getElementById('close');
+    var div1 = document.getElementById('background-alpha')
+    var div2 = document.getElementById('login-box')
+    btn.onclick = function () {
+      div1.style.display = "none";
+      div2.style.display = "none";
+    }
+  </script>
+
+
+</body>
+
+</html>
